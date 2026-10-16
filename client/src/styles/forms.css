@@ -1,0 +1,19 @@
+input, select, textarea {
+  width: 100%; font: inherit; color: var(--text);
+  padding: 0.6rem 0.8rem; border: 1.5px solid var(--line); border-radius: var(--radius); background: #fff;
+}
+input:focus, select:focus, textarea:focus { outline: none; border-color: var(--primary); box-shadow: 0 0 0 3px var(--primary-soft); }
+input[type='checkbox'], input[type='radio'] { width: auto; }
+
+.form { display: flex; flex-direction: column; gap: 0.5rem; }
+.form label { font-weight: 700; font-size: 0.875rem; margin-top: 0.4rem; }
+.form h2 { margin-top: 0.75rem; }
+.form h2:first-of-type { margin-top: 0; }
+.form .btn--block { margin-top: 1rem; }
+.form__row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.form__row--inline { grid-template-columns: 1fr auto; }
+.radio { display: flex; align-items: center; gap: 0.6rem; font-weight: 500 !important; }
+
+.auth { display: grid; place-items: center; padding: 3rem 1rem; }
+.auth__card { width: 100%; max-width: 420px; }
+.auth__alt { text-align: center; margin: 0.75rem 0 0; color: var(--muted); }
